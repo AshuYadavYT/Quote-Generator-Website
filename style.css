@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgh200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px 100px;
+}
+.wrapper{
+    width: 605px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper .content{
+    margin: 35px 0;
+}
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: keep-all;
+}
+.quote-area i{
+    font-size: 15px;
+}
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin:  0 0 3px 10px;
+}
+
+.content .author{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+.content span:first-child{
+    margin: -4px 5px 0 0;   
+}
+.wrapper .buttons{
+    border-top: 1px solid rgb(141, 138, 135);
+}
+
+.buttons .features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.features ul{
+    display: flex;
+}
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    border: 2px solid rgb(141, 138, 135);
+    border-radius: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.features ul li:hover{
+    background: green;
+    border: 2px solid green;
+}
+
+.features button{
+    border: none;
+    background: none;
+    background: green;
+    padding: 13px 23px;
+    border-radius: 18px;
+    color: white;
+    font-style: 16px;
+    cursor: pointer;
+}
+
+
+.features button:hover{
+    background: darkgreen;
+}
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.features .share2{
+  visibility: hidden;
+}
+
+@media (max-width:1100px){
+  .features .copy{
+    display: none;
+  }
+  .features .share{
+    display: none;
+  }
+  .features .share2{
+    visibility: visible;
+  }
+}
